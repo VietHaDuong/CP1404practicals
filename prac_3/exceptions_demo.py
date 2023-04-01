@@ -20,11 +20,13 @@ except ZeroDivisionError:
     print("Cannot divide by zero!")
 print("Finished.")
 
-# 1.When will a ValueError occur?
-# ValueError occurs when a function is called but with an incorrect value
+"""
+1.When will a ValueError occur?
+ValueError occurs when a function is called but with an incorrect value
 
-# 2.When will a ZeroDivisionError occur?
-# ZeroDivisionError occur when a number is attempted to be divided by 0
+2.When will a ZeroDivisionError occur?
+ZeroDivisionError occur when a number is attempted to be divided by 0
 
-# 3.Could you change the code to avoid the possibility of a ZeroDivisionError?
-# Yes, by implementing a while loop
+3.Could you change the code to avoid the possibility of a ZeroDivisionError?
+Yes, by implementing a while loop
+"""
