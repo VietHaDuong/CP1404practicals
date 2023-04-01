@@ -27,4 +27,4 @@ print("Finished.")
 # ZeroDivisionError occur when a number is attempted to be divided by 0
 
 # 3.Could you change the code to avoid the possibility of a ZeroDivisionError?
-# Yes, by implement a while loop
+# Yes, by implementing a while loop
