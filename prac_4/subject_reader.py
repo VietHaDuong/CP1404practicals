@@ -4,10 +4,11 @@ Data file -> lists program
 """
 
 FILENAME = "subject_data.txt"
-
+list_of_data = []
 
 def main():
     data = get_data()
+    display_detail(list_of_data)
     print(data)
 
 
@@ -22,8 +23,14 @@ def get_data():
         print(parts)  # See what the parts look like (notice the integer is a string)
         parts[2] = int(parts[2])  # Make the number an integer (ignore PyCharm's warning)
         print(parts)  # See if that worked
+        list_of_data.append(parts)
+        print(list_of_data)
         print("----------")
     input_file.close()
+
+def display_detail(list_of_data):
+    for subject in list_of_data:
+        print(f'{subject[0]} is taught by {subject[1]} and has {subject[2]} students')
 
 
 main()
