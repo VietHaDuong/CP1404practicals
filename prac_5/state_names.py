@@ -24,6 +24,6 @@ try:
     state_code = input("Enter short state: ").upper()
     while state_code == '':
         state_code = input("Enter short state: ").upper()
+    print(state_code, "is", CODE_TO_NAME[state_code])
 except KeyError:
-    print('blah')
-
+    print('Invalid short state')
