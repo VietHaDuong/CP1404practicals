@@ -10,5 +10,3 @@ for word in words:
 
 for word, count in word_occurences.items():
     print(f'{word:{longest_word}} : {count}')
-
-
