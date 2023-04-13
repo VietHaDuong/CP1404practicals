@@ -1,14 +1,16 @@
 word_occurences = dict()
 text = input('Text: ')
 words = text.split()
-longest_word = len(max(words, key=len))
 for word in words:
-    if word in word_occurences:
+    frequency = word_occurences.get(word, 0)
+    try:
         word_occurences[word] += 1
-    else:
+    except KeyError:
         word_occurences[word] = 1
 
-for word, count in word_occurences.items():
-    print(f'{word:{longest_word}} : {count}')
+words = list(word_occurences.keys())
+words.sort()
 
-
+longest_word = max(len(word) for word in words)
+for word in words:
+    print(f'{word:{longest_word}} : {word_occurences[word]}')
