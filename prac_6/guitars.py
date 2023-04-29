@@ -1,6 +1,5 @@
 from prac_6.guitar import Guitar
 
-
 def main():
     guitars = []
     print('My guitar!')
